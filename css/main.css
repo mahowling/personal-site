@@ -37,7 +37,11 @@ section {
 section#header {
   background-color: black;    
   background-image: url("../images/banner.png");
-  min-height: 30vh;
+  min-height: 25vh;  
+}
+
+section#skills {
+    padding-left: 200px;
 }
 
 section#experience {
@@ -74,12 +78,12 @@ p {
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
     color: rgba(255, 255, 255, 0.8);
-    margin: 10px auto;    
-    margin-left : 100px;
+    margin: 0px auto;    
+    margin-left : 150px;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
-    font-size: 1.03em;
+    font-size: 1em;
     padding: 25px;
     list-style: none;
     text-align: left;
@@ -132,7 +136,7 @@ p {
     text-align: right;
     font-weight: 100;
     font-size: 0.9em;
-    min-width: 120px;
+    width: 120px;
   }
   .timeline .event:after {
     box-shadow: 0 0 0 4px #004ffc;
