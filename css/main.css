@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
 
 body {
   font-family: poppins, sans-serif;  
@@ -8,7 +7,7 @@ body {
 
 nav {
   background-color: black;
-  padding: 10px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   width: 100%;
   position: sticky;
@@ -19,12 +18,14 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0px 20px;
+  margin: 0px;
+  padding: 20px;
   font-size: 1.3em;
 }
 
 nav a:hover {
   text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.23);
 }
 
 section {
@@ -39,21 +40,30 @@ section#header {
   min-height: 30vh;
 }
 
+section#experience {
+    min-height: 100vh;
+}
+
+section#education {
+    min-height: 100vh;
+}
+
+
 article {
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
+  width: 95%;
+  max-width: 1000px;
+  padding: 10px;
   margin: 0px auto;
 }
 
 h2 {
   text-align: center;
   padding: 40px 0px 0px 0px;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: left;
 }
 
@@ -64,12 +74,13 @@ p {
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
     color: rgba(255, 255, 255, 0.8);
-    margin: 50px auto;
+    margin: 10px auto;    
+    margin-left : 100px;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
     font-size: 1.03em;
-    padding: 50px;
+    padding: 25px;
     list-style: none;
     text-align: left;
     font-weight: 100;
@@ -93,13 +104,14 @@ p {
     font-size:0.8em;
     font-style: italic;
   }
+
   .timeline p {
       font-size: 0.9em;
   }
   .timeline .event {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     position: relative;
   }
   .timeline .event:last-of-type {
@@ -114,7 +126,7 @@ p {
     top: 0;
   }
   .timeline .event:before {
-    left: -217.5px;
+    left: -160.5px;
     color: rgba(255, 255, 255, 0.4);
     content: attr(data-date);
     text-align: right;
@@ -124,7 +136,7 @@ p {
   }
   .timeline .event:after {
     box-shadow: 0 0 0 4px #004ffc;
-    left: -57.85px;
+    left: -32.85px;
     background: #313534;
     border-radius: 50%;
     height: 11px;
@@ -144,10 +156,16 @@ p {
   body {
     font-size: 14px;
   }
+  article {
+      max-width: 600px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 11px;
-  }
+    body {
+        font-size: 11px;
+    }
+    article {
+        max-width: 400px;
+    }    
 }
